@@ -1,0 +1,330 @@
+@font-face{
+   font-family: syne;
+   src: "fonts/syne";
+}
+
+@font-face{
+   font-family: mattone;
+   src: "fonts/Mattone_Regular.otf";
+}
+
+@keyframes fade_in{
+   0% {opacity: 0;}
+   100% {opacity: 1;}
+}
+
+@keyframes ease_down{
+   0% {bottom: 15%}
+   100% {bottom: 20%}
+}
+
+#darken{
+   mix-blend-mode: darken;
+}
+
+.titlePage {
+   width: 100%;
+   height: 100vh;
+   background-color: white;
+}
+
+.title {
+   font-family: syne-extra;
+   font-size: 7.5em;
+   color: black;
+   position: absolute;
+   text-align: left;
+   left: 10%;
+   bottom: 20%;
+   animation: fade_in 1s, ease_down 4s;
+   animation-delay: 0s;
+   z-index: 11;
+}
+
+.begin{
+   font-family: "roboto mono", monospace;
+   font-size: .85em;
+   color: black;
+   position: absolute;
+   text-align: left;
+   left: 48.5%;
+   bottom: 5%;
+   animation: fade_in 3s;
+   animation-delay: 0s;
+}
+
+.black_line{
+   border-left: 1px solid black;
+   height: 30px;
+   bottom: 0px;
+   position: absolute;
+   left: 50%;
+   z-index: 1;
+   animation: fade_in 3s;
+   animation-delay: 0s;
+}
+
+.line{
+   border-left: 1px solid white;
+   height: 100%;
+   position: absolute;
+   left: 50%;
+   top: 0px;
+   z-index: 0;
+}
+
+.page_1{
+   width: 100%;
+   height: 100vh;
+   position: relative;
+   background-color: black;
+   z-index: 6;
+}
+
+.page_2{
+   width: 100%;
+   height: 100vh;
+   position: relative;
+   background-color: black;
+   z-index: 5;
+}
+
+.page_3{
+   width: 100%;
+   height: 100vh;
+   position: relative;
+   background-color: black;
+   z-index: 4;
+}
+
+.page_4{
+   width: 100%;
+   height: 100vh;
+   position: relative;
+   background-color: black;
+   z-index: 3;
+}
+
+.page_5{
+   width: 100%;
+   height: 100vh;
+   position: relative;
+   background-color: black;
+   z-index: 2;
+}
+
+.page_6{
+   width: 100%;
+   height: 100vh;
+   position: relative;
+   background-color: black;
+   z-index: -1;
+}
+.stage_1{
+   width: 45%;
+   height: 100vh;
+   background-color: black;
+   position: absolute;
+   left: 5%;
+   z-index: 1;
+}
+
+.stage_2{
+   width: 45%;
+   height: 100vh;
+   background-color: black;
+   position: absolute;
+   left: 5%;
+   z-index: 1;
+}
+
+.stage_3{
+   width: 45%;
+   height: 100vh;
+   background-color: black;
+   position: absolute;
+   left: 5%;
+   bottom: 5%;
+   z-index: 1;
+}
+
+img{
+   position: absolute;
+   width: 600px;
+}
+
+.info_1{
+   position: absolute;
+   text-align: left;
+   left: 50%;
+   top: 15%;
+   width: 500px;
+   background-color: black;
+   opacity:0;
+}
+
+.info_2{
+   position: absolute;
+   text-align: left;
+   left: 50%;
+   top: 15%;
+   width: 500px;
+   background-color: black;
+   opacity:0;
+}
+
+.info_3{
+   position: absolute;
+   text-align: left;
+   left: 50%;
+   top: 15%;
+   width: 500px;
+   background-color: black;
+   opacity:0;
+}
+
+.info_4{
+   position: absolute;
+   text-align: left;
+   left: 50%;
+   top: 15%;
+   width: 500px;
+   background-color: black;
+   opacity:0;
+}
+
+.info_5{
+   position: absolute;
+   text-align: left;
+   left: 50%;
+   top: 15%;
+   width: 500px;
+   background-color: black;
+   opacity:0;
+}
+
+.info_6{
+   position: absolute;
+   text-align: left;
+   left: 50%;
+   top: 15%;
+   width: 500px;
+   background-color: black;
+   opacity:0;
+}
+
+p{
+   font-family: mattone;
+   font-size: 1.05em;
+   color: white;
+   line-height: 1.5;
+
+}
+.date{
+   font-family: syne-bold;
+   font-size: 2em;
+   color: white;
+   line-height: 2;
+   text-transform: uppercase;
+   font-feature-settings: "lnum" 1;
+}
+
+.home{
+   font-family: "roboto mono", monospace;
+   font-size: .85em;
+   color: white;
+   position: fixed;
+   text-align: left;
+   left: 10%;
+   top: 5%;
+   z-index: 10;
+}
+
+.home:hover {
+   text-decoration: underline;
+   cursor: pointer;
+   z-index: 10;
+}
+
+.pagenum{
+   font-family: "roboto mono", monospace;
+   font-size: .85em;
+   color: white;
+   position: fixed;
+   text-align: left;
+   left: 10%;
+   bottom: 10%;
+   z-index: 10;
+}
+
+.footer{
+   width: 100%;
+   height: 100vh;
+   background-color: white;
+   position: relative;
+}
+
+.footerTitle{
+   font-family: syne-bold;
+   font-size: 2em;
+   color: black;
+   line-height: 2;
+   position: absolute;
+   text-align: left;
+   top: 10%;
+   left: 10%;
+}
+
+.col1{
+   font-family: mattone;
+   font-size: 1.05em;
+   color: black;
+   line-height: 1.5;
+   position: absolute;
+   text-align: left;
+   left: 10%;
+   top: 15%;
+   width: 500px;
+}
+
+.col2{
+   font-family: mattone;
+   font-size: 1.05em;
+   color: black;
+   line-height: 1.5;
+   position: relative;
+   text-align: left;
+   left: 50%;
+   top: 15%;
+   width: 500px;
+}
+
+#trigger_1 {
+   position: absolute;
+   width: 200px;
+   height: 2px;
+   background: none;
+   top: 0px;
+   right: 100px;
+}
+
+#trigger_2 {
+   position: absolute;
+   width: 200px;
+   height: 2px;
+   background: none;
+   top: 0px;
+   right: 100px;
+}
+
+#trigger_3 {
+   position: absolute;
+   width: 200px;
+   height: 2px;
+   background: none;
+   top: 0px;
+   right: 100px;
+}
+
+
+
